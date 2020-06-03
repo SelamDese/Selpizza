@@ -6,3 +6,8 @@ class Category(models.Model):
 
     def __str__(self):
         return f"{self.name}"
+
+class Regular_pizza(models.Model):
+    name=models.CharField(max_length=64)
+    small=models.DecimalField(max_digits=4,decimal_places=2)
+    large=models.DecimalField(max_digits=4,decimal_places=2)
