@@ -45,7 +45,8 @@ class Pasta(models.Model):
         return f"{self.name} - {self.price}"
 
 class Salads(models.Model):
-    name=
+    name=models.CharField(max_length=64)
+    price=models.DecimalField(max_digits=4,decimal_places=2)
 
 class Dinner_platter(models.Model):
     name=models.CharField(max_length=64)
