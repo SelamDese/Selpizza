@@ -26,4 +26,5 @@ class Sicilian_pizza(models.Model):
 class Topping(models.Model):
     name=models.CharField(max_length=64)
 
-    
+    def __str__(self):
+        return f"{self.name}"
