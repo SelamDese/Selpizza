@@ -48,6 +48,9 @@ class Salads(models.Model):
     name=models.CharField(max_length=64)
     price=models.DecimalField(max_digits=4,decimal_places=2)
 
+    def __str__(self):
+        return f"{self.name} - {self.price}"
+
 class Dinner_platter(models.Model):
     name=models.CharField(max_length=64)
     small=models.DecimalField(max_digits=4,decimal_places=2)
