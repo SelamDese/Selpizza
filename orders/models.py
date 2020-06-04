@@ -21,4 +21,9 @@ class Sicilian_pizza(models.Model):
     large=models.DecimalField(max_digits=4,decimal_places=2)
 
     def __str__(self):
-        return f"{self.name} - {self.small} -{self.large}"        
+        return f"{self.name} - {self.small} -{self.large}"
+
+class Topping(models.Model):
+    name=models.CharField(max_length=64)
+
+    
