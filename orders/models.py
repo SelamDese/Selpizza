@@ -59,7 +59,7 @@ class Dinner_platter(models.Model):
     def __str__(self):
         return f"{self.name} - {self.small} -{self.large}"
 
-class Order(models.Model):
+class User_order(models.Model):
     user=models.ForeignKey(User,on_delete=models.CASCADE)
     order_number=models.IntegerField()
     topping_allowance=models.IntegerField(default=0)
