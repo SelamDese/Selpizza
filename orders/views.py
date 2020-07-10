@@ -4,8 +4,8 @@ from .models import Category,Regular_pizza,Sicilian_pizza,Topping,Sub,Pasta,Sala
 
 # Create your views here.
 def index(request):
-    # return HttpResponse("hello")
-    context = {
-        "Category": Category.objects.all()
-    }
-    return render(request,"index.html",context)
+    return HttpResponse("hello")
+    # context = {
+    #     "Category": Category.objects.all()
+    # }
+    # return render(request,"index.html",context)
