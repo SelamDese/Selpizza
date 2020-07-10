@@ -44,7 +44,7 @@ class Pasta(models.Model):
     def __str__(self):
         return f"{self.name} - {self.price}"
 
-class Salads(models.Model):
+class Salad(models.Model):
     name=models.CharField(max_length=64)
     price=models.DecimalField(max_digits=4,decimal_places=2)
 
